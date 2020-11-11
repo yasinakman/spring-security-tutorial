@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: Spring Security Api
+
+api:
+  authorization:
+    users:
+      yasin:
+        password: "{noop}akman"
+        config:
+          timeout: false
+          roles:
+            - ROLE_ADMIN
+      talha:
+        password: "{noop}akman"
+        config:
+          timeout: true
+          roles:
+            - ROLE_SECADMIN
